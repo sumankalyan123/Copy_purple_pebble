@@ -5,6 +5,11 @@ from django.shortcuts import render
 def home(request):
     return render(request,'index.html')
 
-
+#gallery
 def services_page(request):
     return render(request,'index-1.html')
+
+
+
+def contact_us(request):
+    return render(request,'index-4.html')
