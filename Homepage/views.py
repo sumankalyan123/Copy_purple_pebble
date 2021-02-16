@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-#sample123
+#sample123456
 # Create your views here.
 def home(request):
     return render(request,'index.html')
