@@ -8,7 +8,7 @@
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico">
 
-			<link  rel='stylesheet' type='text/css' href="{% static 'css/stuck.css' %}" >
+	    <link  rel='stylesheet' type='text/css' href="{% static 'css/stuck.css' %}" >
 		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
 		<link rel="stylesheet" href="{% static 'css/form.css' %}">
 		<link  rel='stylesheet' type='text/css' href="{% static 'css/touchTouch.css' %}" >
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="{% static 'js/jquery.js' %}"></script>
 		<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
 		<script src="{% static 'js/script.js' %}"></script>
@@ -33,6 +33,10 @@
 		<script src="{% static 'js/sForm.js' %}"></script>
 		<script src="{% static 'js/camera.js' %}"></script>
 		<script src="{% static 'js/jquery.mobile.customized.min.js' %}"></script>
+
+
+
+		<script type="text/javascript" src="{% static 'js/ImageScroll.js' %}"></script>
 
 
 
@@ -65,6 +69,38 @@
 			$('.gallery a.gal_item').touchTouch();
 		});
 		</script>
+
+
+   <script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"right",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -92,10 +128,10 @@
 							<div class="menu_block">
 								<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 									<ul class="sf-menu">
-										<li class="current"><a href="/">About</a></li>
+										<li class="current"><a href="/">Home</a></li>
 										<li><a href="/services_page">Gallery</a></li>
-										<li><a href="index-2.html">Resume</a></li>
-										<li><a href="index-3.html">Blog</a></li>
+<!--										<li><a href="index-2.html">Resume</a></li>-->
+<!--										<li><a href="index-3.html">Blog</a></li>-->
 										<li><a href="/contact_us">Contact Us</a></li>
 									</ul>
 								</nav>
@@ -136,20 +172,7 @@
 				</div>
 			</div>
 <!--=====================Content======================-->
-			<div class="block1">
-				<div class="container">
-					<div class="row">
-						<div class="grid_12">
-							<div class="rel">
-								<p>
-								Hi! I’m Katrine Dove. Photography is a passion of mine. Let me use my talent & professionalism to capture the precious moments of your life.
-								</p>
-								<a href="#" class="btn bt__1">Hire Me</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 			<section class="content">
 				<div class="container"><div class="ic">More Website Templates @ TemplateMonster.com - May 05, 2014!</div>
 					<div class="row">
@@ -262,24 +285,26 @@
 						<div class="clear"></div>
 					</div>
 				</div>
-				<div id="owl">
-					<div class="item"><img src="{% static 'image/car_img1.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img2.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img3.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img4.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img5.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img6.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img7.jpg' %}" alt=""></div>
+<div >
+  <ul id="imgs">
+    <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=487" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=486" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=484" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=483" alt="" /></li>
+	 <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=487" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=486" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=484" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=483" alt="" /></li>
+  </ul>
+   </div>
 
-					<div class="item"><img src="{% static 'image/car_img1.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img2.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img3.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img4.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img5.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img6.jpg' %}" alt=""></div>
-					<div class="item"><img src="{% static 'image/car_img7.jpg' %}" alt=""></div>
 
-				</div>
 			</section>
 <!--==============================Bot_block=================================-->
 
