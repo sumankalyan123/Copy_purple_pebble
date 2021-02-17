@@ -2,30 +2,107 @@
 {% load static %}
 <html lang="en">
 	<head>
-		<title>Blog</title>
+		<title>Home</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="css/stuck.css">
-		<link rel="stylesheet" href="css/form.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery-migrate-1.1.1.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/superfish.js"></script>
-		<script src="js/jquery.equalheights.js"></script>
-		<script src="js/jquery.mobilemenu.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/tmStickUp.js"></script>
-		<script src="js/jquery.ui.totop.js"></script>
-		<script src="js/sForm.js"></script>
+
+	    <link  rel='stylesheet' type='text/css' href="{% static 'css/stuck.css' %}" >
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/form.css' %}">
+		<link  rel='stylesheet' type='text/css' href="{% static 'css/touchTouch.css' %}" >
+		<link rel="stylesheet" href="{% static 'css/camera.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="{% static 'js/jquery.js' %}"></script>
+		<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+		<script src="{% static 'js/script.js' %}"></script>
+		<script src="{% static 'js/superfish.js' %}"></script>
+		<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+
+		<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+		<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+		<script src="{% static 'js/tmStickUp.js' %}"></script>
+		<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+		<script src="{% static 'js/touchTouch.jquery.js' %}"></script>
+
+		<script src="{% static 'js/owl.carousel.js' %}"></script>
+		<script src="{% static 'js/sForm.js' %}"></script>
+		<script src="{% static 'js/camera.js' %}"></script>
+		<script src="{% static 'js/jquery.mobile.customized.min.js' %}"></script>
+
+<!--		<script type="text/javascript" src="{% static 'js/ImageScroll.js' %}"></script>-->
+
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
 		<script>
-			$(document).ready(function(){
+		$(document).ready(function(){
+			jQuery('#camera_wrap').camera({
+				loader: false,
+				pagination: false ,
+				minHeight: '200',
+				thumbnails: false,
+				height: '39,0625%',
+				caption: true,
+				navigation: true,
+				fx: 'mosaic'
+			});
+			var owl = $("#owl");
+			owl.owlCarousel({
+				items : 7, //10 items above 1000px browser width
+				itemsDesktop : [995,5], //5 items between 1000px and 901px
+				itemsDesktopSmall : [767, 3], // betweem 900px and 601px
+				itemsTablet: [700, 3], //2 items between 600 and 0
+				itemsMobile : [479, 2], // itemsMobile disabled - inherit from itemsTablet option
+				navigation : true,
+			});
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			$('#stuck_container').tmStickUp({});
+			$('.gallery a.gal_item').touchTouch();
 		});
 		</script>
+
+
+<!--   <script type="text/javascript">-->
+
+<!--  $('#imgs').imageScroll({-->
+<!--    orientation:"right",-->
+<!--    speed:600,-->
+<!--    interval:1000,-->
+<!--    hoverPause:true,-->
+<!--    callback:function(){-->
+<!--      var ordinal = $(this).find("img").first().attr("src");-->
+<!--      &lt;!&ndash; console.log(ordinal); &ndash;&gt;-->
+<!--      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");-->
+<!--    }-->
+<!--  });-->
+
+<!--  </script><script type="text/javascript">-->
+
+<!--  var _gaq = _gaq || [];-->
+<!--  _gaq.push(['_setAccount', 'UA-36251023-1']);-->
+<!--  _gaq.push(['_setDomainName', 'jqueryscript.net']);-->
+<!--  _gaq.push(['_trackPageview']);-->
+
+<!--  (function() {-->
+<!--    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;-->
+<!--    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';-->
+<!--    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);-->
+<!--  })();-->
+
+<!--</script>-->
+
+
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -34,116 +111,208 @@
 		</div>
 		<![endif]-->
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<link rel="stylesheet" media="screen" href="css/ie.css">
+			<script src="{% static 'js/html5shiv.js' %}"></script>
+			<link rel="stylesheet" media="screen" href="{% static 'css/ie.css' %}">
 		<![endif]-->
 	</head>
-	<body class="" id="top">
-<!--==============================header=================================-->
-		<header>
-			<div id="stuck_container">
-				<div class="container">
-					<div class="row">
-						<div class="grid_12">
-							<h1>
-								<a href="index.html">
-									<img src="images/logo.png" alt="Your Happy Family">
-								</a>
-							</h1>
-							<div class="menu_block">
+	<body class="page1" id="top">
+
+
+<div class="container bg-warning">
+
+
+  <div class="row">
+	  <div id="stuck_container"  class="header_new bg-dark">
+    <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+
+	<div class="logo">
+	<a href="/">
+		<img src="{% static 'image/logo_new.png' %}" alt="Your Happy Family">
+	</a>
+</div>
+
+
+
+
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+     			<div class="menu_block">
 								<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 									<ul class="sf-menu">
-										<li><a href="index.html">About</a></li>
-										<li><a href="index-1.html">Portfolio</a></li>
-										<li><a href="index-2.html">Resume</a></li>
-										<li class="current"><a href="index-3.html">Blog</a></li>
-										<li><a href="index-4.html">Contacts</a></li>
+										<li class="current"><a href="/">Home</a></li>
+										<li><a href="/services_page">Gallery</a></li>
+<!-- v										<li><a href="index-2.html">Resume</a></li>-->
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="/contact_us">Contact Us</a></li>
 									</ul>
 								</nav>
 								<div class="clear"></div>
 							</div>
-						</div>
+    </div>
+
+		  </div>
+  </div>
+
+
+	<div class="row ">
+		 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+			 		<div class="main">
+			<div class="slider_wrapper">
+				<div id="camera_wrap" >
+					<div data-src="{% static 'image/slide.jpg' %}">
+
+					</div>
+					<div data-src="{% static 'image/slide1.jpg' %}">
+
+					</div>
+					<div data-src="{% static 'image/slide2.jpg' %}">
+
 					</div>
 				</div>
 			</div>
-		</header>
-		<div class="main">
-<!--=====================Content======================-->
+		 </div>
+
+
+	</div>
+
+
+
+
+</div>
+
+
+
 			<section class="content">
 				<div class="container"><div class="ic">More Website Templates @ TemplateMonster.com - May 05, 2014!</div>
 					<div class="row">
-						<div class="grid_11">
-							<div class="blog">
-								<time datetime='2014-01-01'>13<span>Feb</span></time>
-								<img src="images/page4_img1.jpg" alt="" class="img_inner fleft">
-								<div class="extra_wrapper">
-									<h3 class="blog_head color1"><a href="#">Etiam dui eros, laoreet</a></h3>
-									<p>Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis <br> accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl</p>
-									Auctor vel velit sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor aliquet. Integer convallis orci vel mi laoreet, at ornare lorem consequat. Phasellus erat nisl, auctor vel velit sed, pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor aliquet.
-									<br>
-									<a href="#" class="btn bt__2">Read More</a>
-								</div>
-							</div>
-							<div class="blog">
-								<time datetime='2014-01-01'>22<span>Feb</span></time>
-								<img src="images/page4_img2.jpg" alt="" class="img_inner fleft">
-								<div class="extra_wrapper">
-									<h3 class="blog_head color1"><a href="#">Feriam dui erosoreeter</a></h3>
-									<p>Beras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis<br> accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl</p>
-									Auctor vel velit sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor aliquet. Integer convallis orci vel mi laoreet, at ornare lorem consequat. Phasellus erat nisl, auctor vel velit sed, pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor
-									<br>
-									<a href="#" class="btn bt__2">Read More</a>
-								</div>
-							</div>
-							<div class="blog">
-								<time datetime='2014-01-01'>19<span>Mar</span></time>
-								<img src="images/page4_img3.jpg" alt="" class="img_inner fleft">
-								<div class="extra_wrapper">
-									<h3 class="blog_head color1"><a href="#">Urtiam dui erosoreetwe</a></h3>
-									<p>Aras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis<br> accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl</p>
-									Auctor vel velit sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor aliquet. Integer convallis orci vel mi laoreet, at ornare lorem consequat. Phasellus erat nisl, auctor vel velit sed, pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien
-									<br>
-									<a href="#" class="btn bt__2">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-<!--==============================Bot_block=================================-->
-			<section class="bottom_block">
-				<div class="container">
-					<div class="row">
-						<div class="grid_5">
-							<div class="bot_title">
-								<span class="fa fa-envelope-o"></span>Subscribe to My Newsletter
-							</div>
-						</div>
-						<div class="grid_7">
-							<form id="newsletter">
+						<div class="grid_12">
+							<h2>We Offer</h2>
+							<div class="gallery">
 								<div class="row">
 									<div class="grid_4">
-										<div class="rel">
-											<div class="success">Your subscrsibe request has been sent!</div>
-											<label class="email">
-												<input type="email" value="Your Email Address Here" >
-												<span class="error">*This is not a valid email address.</span>
-												<span class="clear"></span>
-											</label>
-										</div>
+										<a href="{% static 'image/big1.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img1.jpg' %}" alt="">
+											<div class="gal_caption">Pre Wedding</div>
+											<span class="gal_magnify"></span>
+										</a>
 									</div>
-									<div class="grid_3">
-										<a href="#" class="btn bt__2" data-type="submit">Submit</a>
+									<div class="grid_4">
+										<a href="{% static 'image/big2.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img2.jpg' %}"alt="">
+											<div class="gal_caption">Portfolio Shoot </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big3.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img3.jpg' %}"alt="">
+											<div class="gal_caption">Wedding</div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big4.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img4.jpg' %}" alt="">
+											<div class="gal_caption">Maternity Shoot </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big5.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img5.jpg' %}"  alt="">
+											<div class="gal_caption">Real Estate </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big6.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img6.jpg' %}" alt="">
+											<div class="gal_caption">Birthdays </div>
+											<span class="gal_magnify"></span>
+										</a>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
+						<div class="clear"></div>
+						<div class="grid_4">
+							<h3 class="mb__0">Equipment</h3>
+							<div class="block2">
+								<div class="block2_title color1">Camera</div>
+									<ul class="list">
+									<li><a href="#">Lorem ipsum dolorertolo </a></li>
+									<li><a href="#">Git met consecteturert </a></li>
+									<li><a href="#">Odipiscing elit mollis erat</a></li>
+								</ul>
+							</div>
+							<div class="block2">
+								<div class="block2_title color1">Lighting</div>
+								<ul class="list">
+									<li><a href="#">Lorem ipsum dolorilomo </a></li>
+									<li><a href="#">Aconsectetur teroloter </a></li>
+									<li><a href="#">Sdipiscing elitmollis erat </a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="grid_4">
+							<h3>About me</h3>
+							<p>Need more information about this thingummy? Follow the <span class="color1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow">link</a></span>.</p>
+							<p>Choose <span class="color1"><a href="http://www.templatemonster.com/properties/topic/design-photography/" rel="nofollow">designs</a></span> of this kind at TemplateMonster’s website.</p>
+							Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl<br>
+							<a href="#" class="btn bt__2">Read More</a>
+						</div>
+						<div class="grid_4">
+							<h3>Publications</h3>
+							<ul class="list1">
+								<li>
+									<div class="list_count">1</div>
+									<div class="extra_wrapper">
+										<div class="list1_title color2"><a href="#">“Lorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
+										<a href="#" class="color1 td_und">More</a>
+									</div>
+								</li>
+								<li>
+									<div class="list_count">2</div>
+									<div class="extra_wrapper">
+										<div class="list1_title color2"><a href="#">“Dorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
+										<a href="#" class="color1 td_und">More</a>
+									</div>
+								</li>
+								<li>
+									<div class="list_count">3</div>
+									<div class="extra_wrapper">
+										<div class="list1_title color2"><a href="#">“Kerem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
+										<a href="#" class="color1 td_und">More</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+						<div class="grid_12">
+							<h3 class="head1">Sample Shots</h3>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
+<div >
+  <ul id="imgs">
+    <li><img src="https://unsplash.it/800/600?image=486" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=487" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=486" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
+
+
+  </ul>
+   </div>
+
+
 			</section>
-		</div>
-<!--==============================footer=================================-->
-		<footer>
+
+
+
+			<footer>
 			<div class="container">
 				<div class="row">
 					<div class="grid_12">
@@ -154,14 +323,20 @@
 							<a href="#" class="fa fa-pinterest"></a>
 						</div>
 						<div class="copy">
-							<span class="brand">KatrineDove</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+								<span class="brand">Blue Lens</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
 							<div class="sub_copy">
-								Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+								Website designed by <a href="#" rel="nofollow">TemplateMonster.com</a>
+							</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+
 		</footer>
+
+
+
+	</div>
+
 	</body>
 </html>

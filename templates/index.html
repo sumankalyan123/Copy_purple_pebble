@@ -8,6 +8,10 @@
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico">
 
+
+
+
+
 	    <link  rel='stylesheet' type='text/css' href="{% static 'css/stuck.css' %}" >
 		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
 		<link rel="stylesheet" href="{% static 'css/form.css' %}">
@@ -38,8 +42,11 @@
 
 		<script type="text/javascript" src="{% static 'js/ImageScroll.js' %}"></script>
 
-
-
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 		<!--<![endif]-->
@@ -71,34 +78,9 @@
 		</script>
 
 
-   <script type="text/javascript">
 
-  $('#imgs').imageScroll({
-    orientation:"right",
-    speed:600,
-    interval:1000,
-    hoverPause:true,
-    callback:function(){
-      var ordinal = $(this).find("img").first().attr("src");
-      <!-- console.log(ordinal); -->
-      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
-    }
-  });
 
-  </script><script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 
 		<!--[if lt IE 8]>
@@ -131,7 +113,7 @@
 										<li class="current"><a href="/">Home</a></li>
 										<li><a href="/services_page">Gallery</a></li>
 <!-- v										<li><a href="index-2.html">Resume</a></li>-->
-<!--										<li><a href="index-3.html">Blog</a></li>-->
+										<li><a href="/blog">Blog</a></li>
 										<li><a href="/contact_us">Contact Us</a></li>
 									</ul>
 								</nav>
@@ -147,26 +129,21 @@
 				<div id="camera_wrap" class="">
 					<div data-src="{% static 'image/slide.jpg' %}">
 						<div class="caption fadeIn">
-							<div class="title">Love</div>
-							<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>
-							<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>
-							<a href="#">Learn More</a>
+							<div class="title">Wedding Photoshoot</div>
+
+
 						</div>
 					</div>
 					<div data-src="{% static 'image/slide1.jpg' %}">
 						<div class="caption fadeIn">
-							<div class="title">Nude Art</div>
-							<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>
-							<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>
-							<a href="#">Learn More</a>
+							<div class="title">Engagement Ceremony</div>
+
 						</div>
 					</div>
 					<div data-src="{% static 'image/slide2.jpg' %}">
 						<div class="caption fadeIn">
-							<div class="title">In Motion</div>
-							<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>
-							<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>
-							<a href="#">Learn More</a>
+							<div class="title">Pre Wedding Shoot</div>
+
 						</div>
 					</div>
 				</div>
@@ -222,62 +199,110 @@
 											<span class="gal_magnify"></span>
 										</a>
 									</div>
+
+
+
+									<div class="grid_4">
+										<a href="{% static 'image/big6.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img6.jpg' %}" alt="">
+											<div class="gal_caption">Birthdays </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big6.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img6.jpg' %}" alt="">
+											<div class="gal_caption">Birthdays </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big6.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img6.jpg' %}" alt="">
+											<div class="gal_caption">Birthdays </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+
+
+
+										<div class="grid_4">
+										<a href="{% static 'image/big4.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img4.jpg' %}" alt="">
+											<div class="gal_caption">Maternity Shoot </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big5.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img5.jpg' %}"  alt="">
+											<div class="gal_caption">Real Estate </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+									<div class="grid_4">
+										<a href="{% static 'image/big6.jpg' %}" class="gal_item">
+											<img src="{% static 'image/page1_img6.jpg' %}" alt="">
+											<div class="gal_caption">Birthdays </div>
+											<span class="gal_magnify"></span>
+										</a>
+									</div>
+
+
+
+
+
+
 								</div>
 							</div>
 						</div>
 						<div class="clear"></div>
-						<div class="grid_4">
-							<h3 class="mb__0">Equipment</h3>
-							<div class="block2">
-								<div class="block2_title color1">Camera</div>
-									<ul class="list">
-									<li><a href="#">Lorem ipsum dolorertolo </a></li>
-									<li><a href="#">Git met consecteturert </a></li>
-									<li><a href="#">Odipiscing elit mollis erat</a></li>
-								</ul>
-							</div>
-							<div class="block2">
-								<div class="block2_title color1">Lighting</div>
-								<ul class="list">
-									<li><a href="#">Lorem ipsum dolorilomo </a></li>
-									<li><a href="#">Aconsectetur teroloter </a></li>
-									<li><a href="#">Sdipiscing elitmollis erat </a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="grid_4">
-							<h3>About me</h3>
-							<p>Need more information about this thingummy? Follow the <span class="color1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow">link</a></span>.</p>
-							<p>Choose <span class="color1"><a href="http://www.templatemonster.com/properties/topic/design-photography/" rel="nofollow">designs</a></span> of this kind at TemplateMonster’s website.</p>
-							Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl<br>
-							<a href="#" class="btn bt__2">Read More</a>
-						</div>
-						<div class="grid_4">
-							<h3>Publications</h3>
-							<ul class="list1">
-								<li>
-									<div class="list_count">1</div>
-									<div class="extra_wrapper">
-										<div class="list1_title color2"><a href="#">“Lorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
-										<a href="#" class="color1 td_und">More</a>
-									</div>
-								</li>
-								<li>
-									<div class="list_count">2</div>
-									<div class="extra_wrapper">
-										<div class="list1_title color2"><a href="#">“Dorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
-										<a href="#" class="color1 td_und">More</a>
-									</div>
-								</li>
-								<li>
-									<div class="list_count">3</div>
-									<div class="extra_wrapper">
-										<div class="list1_title color2"><a href="#">“Kerem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras
-										<a href="#" class="color1 td_und">More</a>
-									</div>
-								</li>
-							</ul>
-						</div>
+
+
+
+
+<div class="row">
+		<div class="col-md-8 col-center">
+			<h2>Testimonials</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+					</div>
+					<div class="item">
+						<div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
+						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+						<p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+					</div>
+					<div class="item">
+						<div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+						<p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
 						<div class="clear"></div>
 						<div class="grid_12">
 							<h3 class="head1">Sample Shots</h3>
@@ -295,12 +320,7 @@
     <li><img src="https://unsplash.it/800/600?image=484" alt="" /></li>
     <li><img src="https://unsplash.it/800/600?image=483" alt="" /></li>
 	 <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=488" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=487" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=486" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=484" alt="" /></li>
-    <li><img src="https://unsplash.it/800/600?image=483" alt="" /></li>
+
   </ul>
    </div>
 

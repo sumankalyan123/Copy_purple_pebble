@@ -13,3 +13,6 @@ def services_page(request):
 
 def contact_us(request):
     return render(request,'index-4.html')
+
+def blog(request):
+    return render(request,'index-3.html')
