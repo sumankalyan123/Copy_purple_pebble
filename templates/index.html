@@ -10,7 +10,7 @@
 
 
 
-
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
 	    <link  rel='stylesheet' type='text/css' href="{% static 'css/stuck.css' %}" >
 		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<script src="{% static 'js/jquery.js' %}"></script>
 		<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
 		<script src="{% static 'js/script.js' %}"></script>
@@ -40,19 +40,18 @@
 
 
 
-		<script type="text/javascript" src="{% static 'js/ImageScroll.js' %}"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="{% static 'js/jssor.slider-28.1.0.min.js' %}"></script>
 
 
 
-		<!--<![endif]-->
-		<script>
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+
+
+
+<script>
 		$(document).ready(function(){
 			jQuery('#camera_wrap').camera({
 				loader: false,
@@ -80,77 +79,11 @@
 		</script>
 
 
-   <script type="text/javascript">
-        window.jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $Idle: 0,
-              $SlideDuration: 5000,
-              $SlideEasing: $Jease$.$Linear,
-              $PauseOnHover: 4,
-              $SlideWidth: 140,
-              $Align: 0
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-    <style>
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-    </style>
 
 
 
 
-		<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-		</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="{% static 'js/html5shiv.js' %}"></script>
-			<link rel="stylesheet" media="screen" href="{% static 'css/ie.css' %}">
-		<![endif]-->
+
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -207,7 +140,7 @@
 			</div>
 <!--=====================Content======================-->
 
-			<section class="content">
+			<section class="content1">
 				<div class="container"><div class="ic">More Website Templates @ TemplateMonster.com - May 05, 2014!</div>
 					<div class="row">
 						<div class="grid_12">
@@ -223,21 +156,21 @@
 									</div>
 									<div class="grid_4">
 										<a href="{% static 'image/big2.jpg' %}" class="gal_item">
-											<img src="{% static 'image/page1_img2.jpg' %}"alt="">
+											<img src="{% static 'image/page1_img2.jpg' %}" >
 											<div class="gal_caption">Portfolio Shoot </div>
 											<span class="gal_magnify"></span>
 										</a>
 									</div>
 									<div class="grid_4">
 										<a href="{% static 'image/big3.jpg' %}" class="gal_item">
-											<img src="{% static 'image/page1_img3.jpg' %}"alt="">
+											<img src="{% static 'image/page1_img3.jpg' %}" alt="">
 											<div class="gal_caption">Wedding</div>
 											<span class="gal_magnify"></span>
 										</a>
 									</div>
 									<div class="grid_4">
 										<a href="{% static 'image/big4.jpg' %}" class="gal_item">
-											<img src="{% static 'image/page1_img4.jpg' %}" alt="">
+											<img src="{% static 'image/page1_img4.jpg' %}" >
 											<div class="gal_caption">Maternity Shoot </div>
 											<span class="gal_magnify"></span>
 										</a>
@@ -318,99 +251,63 @@
 
 
 
-<div class="row">
-		<div class="col-md-8 col-center">
-			<h2>Testimonials</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<div class="img-box"><img src="{% static 'image/testimony_1.jpg' %}" alt=""></div>
-						<p class="testimonial">A 6 star experience! Chinmaya shot the pictures with best DSLR available in the market. They were of the utmost quality. He is a friendly, professional, and excellent photographer. Loved their super-fast, affordable and best in quality service.</p>
-						<p class="overview"><b>Vikash Negi</b></p>
-					</div>
-					<div class="item">
-						<div class="img-box"><img src="{% static 'image/testimony_2.jpg' %}" alt=""></div>
-						<p class="testimonial">Chinmay did photoshoot on my wedding in Jagannath temple Agara. Foto quality is very nice. He reached our venue on time. Nice guy and good behavior. Thanks Chinmay for ur suggestions and cooperation.</p>
-						<p class="overview"><b>Srikanta Behera</b></p>
-					</div>
-					<div class="item">
-						<div class="img-box"><img src="{% static 'image/testimony_3.jpg' %}" alt=""></div>
-						<p class="testimonial">We had a great experience for maternity shoot. Photographer was the person who captured the pics. He is very cool and have good patience. Pics we received were very good with high clarity</p>
-						<p class="overview"><b>Ranjith Kumar</b></p>
+<!--<div class="row">-->
+<!--		<div class="col-md-8 col-center">-->
+<!--			<h2>Testimonials</h2>-->
+<!--			<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+<!--				&lt;!&ndash; Carousel indicators &ndash;&gt;-->
+<!--				<ol class="carousel-indicators">-->
+<!--					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--					<li data-target="#myCarousel" data-slide-to="1"></li>-->
+<!--					<li data-target="#myCarousel" data-slide-to="2"></li>-->
+<!--				</ol>-->
+<!--				&lt;!&ndash; Wrapper for carousel items &ndash;&gt;-->
+<!--				<div class="carousel-inner">-->
+<!--					<div class="item active">-->
+<!--						<div class="img-box"><img src="{% static 'image/testimony_1.jpg' %}" alt=""></div>-->
+<!--						<p class="testimonial">A 6 star experience! Chinmaya shot the pictures with best DSLR available in the market. They were of the utmost quality. He is a friendly, professional, and excellent photographer. Loved their super-fast, affordable and best in quality service.</p>-->
+<!--						<p class="overview"><b>Vikash Negi</b></p>-->
+<!--					</div>-->
+<!--					<div class="item">-->
+<!--						<div class="img-box"><img src="{% static 'image/testimony_2.jpg' %}" alt=""></div>-->
+<!--						<p class="testimonial">Chinmay did photoshoot on my wedding in Jagannath temple Agara. Foto quality is very nice. He reached our venue on time. Nice guy and good behavior. Thanks Chinmay for ur suggestions and cooperation.</p>-->
+<!--						<p class="overview"><b>Srikanta Behera</b></p>-->
+<!--					</div>-->
+<!--					<div class="item">-->
+<!--						<div class="img-box"><img src="{% static 'image/testimony_3.jpg' %}" alt=""></div>-->
+<!--						<p class="testimonial">We had a great experience for maternity shoot. Photographer was the person who captured the pics. He is very cool and have good patience. Pics we received were very good with high clarity</p>-->
+<!--						<p class="overview"><b>Ranjith Kumar</b></p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				&lt;!&ndash; Carousel controls &ndash;&gt;-->
+<!--				<a class="carousel-control left" href="#myCarousel" data-slide="prev">-->
+<!--					<i class="fa fa-angle-left"></i>-->
+<!--				</a>-->
+<!--				<a class="carousel-control right" href="#myCarousel" data-slide="next">-->
+<!--					<i class="fa fa-angle-right"></i>-->
+<!--				</a>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+
+
+
+
+
+
+
+
+
 					</div>
 				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-				<a class="carousel-control right" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</div>
-		</div>
-	</div>
 
 
 
 
-						<div class="clear"></div>
-						<div class="grid_12">
-							<h3 class="head1">Sample Shots</h3>
-						</div>
-						<div class="clear"></div>
-					</div>
-				</div>
 
-<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="{% static 'image/001.jpg' %}"/>
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/002.jpg' %}" />
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/003.jpg' %}" />
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/004.jpg' %}" />
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/009.jpg' %}" />
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/010.jpg' %}"/>
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/019.jpg' %}"/>
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/020.jpg' %}"/>
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/021.jpg' %}" />
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/022.jpg' %}"/>
-            </div>
-            <div>
-                <img data-u="image" src="{% static 'image/024.jpg' %}" />
-            </div>
-        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web design</a>
-    </div>
-    <script type="text/javascript">jssor_1_slider_init();
-    </script>
+
+
 
 			</section>
 <!--==============================Bot_block=================================-->
@@ -428,7 +325,7 @@
 							<a href="#" class="fa fa-pinterest"></a>
 						</div>
 						<div class="copy">
-								<span class="brand">PurplePebble</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+								<span class="brand">BlueLens</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
 							<div class="sub_copy">
 								Website designed by <a href="#" rel="nofollow">TemplateMonster.com</a>
 							</div>
