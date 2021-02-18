@@ -1,0 +1,186 @@
+Index: templates/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n{% load static %}\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<title>Home</title>\r\n\t\t<meta charset=\"utf-8\">\r\n\t\t<meta name=\"format-detection\" content=\"telephone=no\">\r\n\t\t<link rel=\"icon\" href=\"images/favicon.ico\">\r\n\t\t<link rel=\"shortcut icon\" href=\"images/favicon.ico\">\r\n\r\n\t\t\t<link  rel='stylesheet' type='text/css' href=\"{% static 'css/stuck.css' %}\" >\r\n\t\t<link rel=\"stylesheet\" href=\"{% static 'css/owl.carousel.css' %}\">\r\n\t\t<link rel=\"stylesheet\" href=\"{% static 'css/form.css' %}\">\r\n\t\t<link  rel='stylesheet' type='text/css' href=\"{% static 'css/touchTouch.css' %}\" >\r\n\t\t<link rel=\"stylesheet\" href=\"{% static 'css/camera.css' %}\">\r\n\t\t<link rel=\"stylesheet\" href=\"{% static 'css/style.css' %}\">\r\n\r\n\r\n\r\n\t\t<script src=\"{% static 'js/jquery.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/jquery-migrate-1.1.1.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/script.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/superfish.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/jquery.equalheights.js' %}\"></script>\r\n\r\n\t\t<script src=\"{% static 'js/jquery.mobilemenu.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/jquery.easing.1.3.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/tmStickUp.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/jquery.ui.totop.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/touchTouch.jquery.js' %}\"></script>\r\n\r\n\t\t<script src=\"{% static 'js/owl.carousel.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/sForm.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/camera.js' %}\"></script>\r\n\t\t<script src=\"{% static 'js/jquery.mobile.customized.min.js' %}\"></script>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!--<![endif]-->\r\n\t\t<script>\r\n\t\t$(document).ready(function(){\r\n\t\t\tjQuery('#camera_wrap').camera({\r\n\t\t\t\tloader: false,\r\n\t\t\t\tpagination: false ,\r\n\t\t\t\tminHeight: '200',\r\n\t\t\t\tthumbnails: false,\r\n\t\t\t\theight: '39,0625%',\r\n\t\t\t\tcaption: true,\r\n\t\t\t\tnavigation: true,\r\n\t\t\t\tfx: 'mosaic'\r\n\t\t\t});\r\n\t\t\tvar owl = $(\"#owl\");\r\n\t\t\towl.owlCarousel({\r\n\t\t\t\titems : 7, //10 items above 1000px browser width\r\n\t\t\t\titemsDesktop : [995,5], //5 items between 1000px and 901px\r\n\t\t\t\titemsDesktopSmall : [767, 3], // betweem 900px and 601px\r\n\t\t\t\titemsTablet: [700, 3], //2 items between 600 and 0\r\n\t\t\t\titemsMobile : [479, 2], // itemsMobile disabled - inherit from itemsTablet option\r\n\t\t\t\tnavigation : true,\r\n\t\t\t});\r\n\t\t\t$().UItoTop({ easingType: 'easeOutQuart' });\r\n\t\t\t$('#stuck_container').tmStickUp({});\r\n\t\t\t$('.gallery a.gal_item').touchTouch();\r\n\t\t});\r\n\t\t</script>\r\n\t\t<!--[if lt IE 8]>\r\n\t\t<div style=' clear: both; text-align:center; position: relative;'>\r\n\t\t\t<a href=\"http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode\">\r\n\t\t\t\t<img src=\"http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg\" border=\"0\" height=\"42\" width=\"820\" alt=\"You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.\" />\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<![endif]-->\r\n\t\t<!--[if lt IE 9]>\r\n\t\t\t<script src=\"{% static 'js/html5shiv.js' %}\"></script>\r\n\t\t\t<link rel=\"stylesheet\" media=\"screen\" href=\"{% static 'css/ie.css' %}\">\r\n\t\t<![endif]-->\r\n\t</head>\r\n\t<body class=\"page1\" id=\"top\">\r\n<!--==============================header=================================-->\r\n\t\t<header>\r\n\t\t\t<div id=\"stuck_container\">\r\n\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"grid_12\">\r\n\t\t\t\t\t\t\t<h1>\r\n\t\t\t\t\t\t\t\t<a href=\"index.html\">\r\n\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/logo.png' %}\" alt=\"Your Happy Family\">\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</h1>\r\n\t\t\t\t\t\t\t<div class=\"menu_block\">\r\n\t\t\t\t\t\t\t\t<nav class=\"horizontal-nav full-width horizontalNav-notprocessed\">\r\n\t\t\t\t\t\t\t\t\t<ul class=\"sf-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li class=\"current\"><a href=\"index.html\">About</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"/services_page\">Services</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"index-2.html\">Resume</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"index-3.html\">Blog</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"index-4.html\">Contact Us</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</nav>\r\n\t\t\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</header>\r\n\t\t<div class=\"main\">\r\n\t\t\t<div class=\"slider_wrapper\">\r\n\t\t\t\t<div id=\"camera_wrap\" class=\"\">\r\n\t\t\t\t\t<div data-src=\"{% static 'image/slide.jpg' %}\">\r\n\t\t\t\t\t\t<div class=\"caption fadeIn\">\r\n\t\t\t\t\t\t\t<div class=\"title\">Love</div>\r\n\t\t\t\t\t\t\t<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>\r\n\t\t\t\t\t\t\t<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>\r\n\t\t\t\t\t\t\t<a href=\"#\">Learn More</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div data-src=\"{% static 'image/slide1.jpg' %}\">\r\n\t\t\t\t\t\t<div class=\"caption fadeIn\">\r\n\t\t\t\t\t\t\t<div class=\"title\">Nude Art</div>\r\n\t\t\t\t\t\t\t<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>\r\n\t\t\t\t\t\t\t<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>\r\n\t\t\t\t\t\t\t<a href=\"#\">Learn More</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div data-src=\"{% static 'image/slide2.jpg' %}\">\r\n\t\t\t\t\t\t<div class=\"caption fadeIn\">\r\n\t\t\t\t\t\t\t<div class=\"title\">In Motion</div>\r\n\t\t\t\t\t\t\t<p>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras  facilisis nulla vel viverra auctor, leo magna sodales felis, quis malesuada ibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis</p>\r\n\t\t\t\t\t\t\t<p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,mmodo luctus libero. Praesent faucibus malesu</p>\r\n\t\t\t\t\t\t\t<a href=\"#\">Learn More</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n<!--=====================Content======================-->\r\n\t\t\t<div class=\"block1\">\r\n\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"grid_12\">\r\n\t\t\t\t\t\t\t<div class=\"rel\">\r\n\t\t\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t\tHi! I’m Katrine Dove. Photography is a passion of mine. Let me use my talent & professionalism to capture the precious moments of your life.\r\n\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn bt__1\">Hire Me</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<section class=\"content\">\r\n\t\t\t\t<div class=\"container\"><div class=\"ic\">More Website Templates @ TemplateMonster.com - May 05, 2014!</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"grid_12\">\r\n\t\t\t\t\t\t\t<h2>We Offer</h2>\r\n\t\t\t\t\t\t\t<div class=\"gallery\">\r\n\t\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big1.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img1.jpg' %}\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Pre Wedding</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big2.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img2.jpg' %}\"alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Portfolio Shoot</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big3.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img3.jpg' %}\"alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Wedding</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big4.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img4.jpg' %}\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Interior</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big5.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img5.jpg' %}\"  alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Animals</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"{% static 'image/big6.jpg' %}\" class=\"gal_item\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{% static 'image/page1_img6.jpg' %}\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"gal_caption\">Nature</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"gal_magnify\"></span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t<h3 class=\"mb__0\">Equipment</h3>\r\n\t\t\t\t\t\t\t<div class=\"block2\">\r\n\t\t\t\t\t\t\t\t<div class=\"block2_title color1\">Camera</div>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"list\">\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Lorem ipsum dolorertolo </a></li>\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Git met consecteturert </a></li>\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Odipiscing elit mollis erat</a></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"block2\">\r\n\t\t\t\t\t\t\t\t<div class=\"block2_title color1\">Lighting</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"list\">\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Lorem ipsum dolorilomo </a></li>\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Aconsectetur teroloter </a></li>\r\n\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Sdipiscing elitmollis erat </a></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t<h3>About me</h3>\r\n\t\t\t\t\t\t\t<p>Need more information about this thingummy? Follow the <span class=\"color1\"><a href=\"http://blog.templatemonster.com/free-website-templates/\" rel=\"nofollow\">link</a></span>.</p>\r\n\t\t\t\t\t\t\t<p>Choose <span class=\"color1\"><a href=\"http://www.templatemonster.com/properties/topic/design-photography/\" rel=\"nofollow\">designs</a></span> of this kind at TemplateMonster’s website.</p>\r\n\t\t\t\t\t\t\tCras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl<br>\r\n\t\t\t\t\t\t\t<a href=\"#\" class=\"btn bt__2\">Read More</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t<h3>Publications</h3>\r\n\t\t\t\t\t\t\t<ul class=\"list1\">\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t<div class=\"list_count\">1</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"extra_wrapper\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"list1_title color2\"><a href=\"#\">“Lorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"color1 td_und\">More</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t<div class=\"list_count\">2</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"extra_wrapper\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"list1_title color2\"><a href=\"#\">“Dorem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"color1 td_und\">More</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t<div class=\"list_count\">3</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"extra_wrapper\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"list1_title color2\"><a href=\"#\">“Kerem ipsum dolor sit met </a></div>In mollis erat mattis neque facilisis, sit amet ultricies erat rutrumras\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"color1 td_und\">More</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t\t<div class=\"grid_12\">\r\n\t\t\t\t\t\t\t<h3 class=\"head1\">Sample Shots</h3>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id=\"owl\">\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img1.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img2.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img3.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img4.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img5.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img6.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img7.jpg' %}\" alt=\"\"></div>\r\n\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img1.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img2.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img3.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img4.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img5.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img6.jpg' %}\" alt=\"\"></div>\r\n\t\t\t\t\t<div class=\"item\"><img src=\"{% static 'image/car_img7.jpg' %}\" alt=\"\"></div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n<!--==============================Bot_block=================================-->\r\n\t\t\t<section class=\"bottom_block\">\r\n\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"grid_5\">\r\n\t\t\t\t\t\t\t<div class=\"bot_title\">\r\n\t\t\t\t\t\t\t\t<span class=\"fa fa-envelope-o\"></span>Subscribe to My Newsletter\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"grid_7\">\r\n\t\t\t\t\t\t\t<form id=\"newsletter\">\r\n\t\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_4\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"rel\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"success\">Your subscrsibe request has been sent!</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<label class=\"email\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"email\" value=\"Your Email Address Here\" >\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"error\">*This is not a valid email address.</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"clear\"></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"grid_3\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn bt__2\" data-type=\"submit\">Submit</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t</div>\r\n<!--==============================footer=================================-->\r\n\t\t<footer>\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"grid_12\">\r\n\t\t\t\t\t\t<div class=\"footer_socials\">\r\n\t\t\t\t\t\t\t<a href=\"#\" class=\"fa fa-twitter\"></a>\r\n\t\t\t\t\t\t\t<a href=\"#\" class=\"fa fa-facebook\"></a>\r\n\t\t\t\t\t\t\t<a href=\"#\" class=\"fa fa-google-plus\"></a>\r\n\t\t\t\t\t\t\t<a href=\"#\" class=\"fa fa-pinterest\"></a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"copy\">\r\n\t\t\t\t\t\t\t<span class=\"brand\">KatrineDove</span> &copy; <span id=\"copyright-year\"></span> | <a href=\"#\">Privacy Policy</a>\r\n\t\t\t\t\t\t\t<div class=\"sub_copy\">\r\n\t\t\t\t\t\t\t\tWebsite designed by <a href=\"http://www.templatemonster.com/\" rel=\"nofollow\">TemplateMonster.com</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</footer>\r\n\t</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/index.html b/templates/index.html
+--- a/templates/index.html	(revision 4fb00ab66ae426c1e950ba754b031b703dde2f15)
++++ b/templates/index.html	(date 1613477354518)
+@@ -167,7 +167,7 @@
+ 									<div class="grid_4">
+ 										<a href="{% static 'image/big2.jpg' %}" class="gal_item">
+ 											<img src="{% static 'image/page1_img2.jpg' %}"alt="">
+-											<div class="gal_caption">Portfolio Shoot</div>
++											<div class="gal_caption">Portfolio Shoot </div>
+ 											<span class="gal_magnify"></span>
+ 										</a>
+ 									</div>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5506834f-3502-481e-a2bc-29050c358413\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/Homepage/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Homepage/views.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\r\n      <file pinned=\"false\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/Homepage/views.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"40\">\r\n              <caret line=\"2\" column=\"10\" selection-start-line=\"2\" selection-start-column=\"10\" selection-end-line=\"2\" selection-end-column=\"10\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/purplePebble/Homepage/views.py\" />\r\n        <option value=\"$PROJECT_DIR$/purplePebble/purplePebble/urls.py\" />\r\n        <option value=\"$PROJECT_DIR$/purplePebble/Homepage/urls.py\" />\r\n        <option value=\"$PROJECT_DIR$/purplePebble/purplePebble/settings.py\" />\r\n        <option value=\"$PROJECT_DIR$/purplePebble/templates/index.html\" />\r\n        <option value=\"$PROJECT_DIR$/Homepage/views.py\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\r\n    <option name=\"x\" value=\"2513\" />\r\n    <option name=\"y\" value=\"167\" />\r\n    <option name=\"width\" value=\"786\" />\r\n    <option name=\"height\" value=\"448\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator proportions=\"\" version=\"1\">\r\n      <foldersAlwaysOnTop value=\"true\" />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"Scope\" />\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <expand>\r\n            <path>\r\n              <item name=\"Purplepebble\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"Purplepebble\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"Purplepebble\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"Purplepebble\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"Homepage\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"Purplepebble\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"Purplepebble\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"purplePebble\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"Purplepebble\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"Purplepebble\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"static\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n          </expand>\r\n          <select />\r\n        </subPane>\r\n      </pane>\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"settings.github\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\a598619\\Documents\\My_Folder\\purplePebble\\purplePebble\\static\\image\" />\r\n      <recent name=\"C:\\Users\\a598619\\Documents\\My_Folder\\purplePebble\\purplePebble\\templates\" />\r\n      <recent name=\"C:\\Users\\a598619\\Documents\\My_Folder\\purplePebble\\purplePebble\\static\" />\r\n      <recent name=\"C:\\Users\\a598619\\Documents\\My_Folder\\purplePebble\\purplePebble\\static\\js\" />\r\n      <recent name=\"C:\\Users\\a598619\\Documents\\My_Folder\\purplePebble\\purplePebble\\static\\css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"ruleStates\">\r\n      <list>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\r\n        </RuleState>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\r\n        </RuleState>\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5506834f-3502-481e-a2bc-29050c358413\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1613414428340</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1613414428340</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"1912\" y=\"-8\" width=\"1936\" height=\"1176\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.16122234\" />\r\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\r\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\r\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" weight=\"0.32981783\" />\r\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" />\r\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\r\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\r\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"7\" />\r\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"8\" visible=\"true\" weight=\"0.18887824\" />\r\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"9\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Python Console\" order=\"10\" />\r\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\r\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/Homepage/urls.py\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/static/css/stuck.css\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/static/css/owl.carousel.css\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/templates/index-2.html\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/purplePebble/settings.py\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/purplePebble/urls.py\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/Homepage/views.py\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/templates/index.html\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/static/image/page1_img1.jpg\" />\r\n    <entry file=\"file://$PROJECT_DIR$/purplePebble/templates/index-1.html\" />\r\n    <entry file=\"file://$PROJECT_DIR$/Homepage/views.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"40\">\r\n          <caret line=\"2\" column=\"10\" selection-start-line=\"2\" selection-start-column=\"10\" selection-end-line=\"2\" selection-end-column=\"10\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4fb00ab66ae426c1e950ba754b031b703dde2f15)
++++ b/.idea/workspace.xml	(date 1613477354555)
+@@ -1,27 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="5506834f-3502-481e-a2bc-29050c358413" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/Homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homepage/views.py" afterDir="false" />
++    <list default="true" id="5506834f-3502-481e-a2bc-29050c358413" name="Default Changelist" comment="eee">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/purplePebble.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/purplePebble.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+     </list>
+-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileEditorManager">
+-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/Homepage/views.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="40">
+-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-    </leaf>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -43,6 +32,9 @@
+     <option name="y" value="167" />
+     <option name="width" value="786" />
+     <option name="height" value="448" />
++  </component>
++  <component name="ProjectLevelVcsManager">
++    <OptionsSetting value="false" id="Update" />
+   </component>
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+@@ -81,7 +73,7 @@
+   <component name="PropertiesComponent">
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+-    <property name="settings.editor.selected.configurable" value="settings.github" />
++    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+@@ -92,18 +84,6 @@
+       <recent name="C:\Users\a598619\Documents\My_Folder\purplePebble\purplePebble\static\css" />
+     </key>
+   </component>
+-  <component name="RunDashboard">
+-    <option name="ruleStates">
+-      <list>
+-        <RuleState>
+-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+-        </RuleState>
+-        <RuleState>
+-          <option name="name" value="StatusDashboardGroupingRule" />
+-        </RuleState>
+-      </list>
+-    </option>
+-  </component>
+   <component name="SvnConfiguration">
+     <configuration />
+   </component>
+@@ -115,6 +95,21 @@
+       <option name="presentableId" value="Default" />
+       <updated>1613414428340</updated>
+     </task>
++    <task id="LOCAL-00001" summary="eee">
++      <created>1613465552111</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1613465552111</updated>
++    </task>
++    <task id="LOCAL-00002" summary="eee">
++      <created>1613467507752</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1613467507752</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+@@ -139,6 +134,21 @@
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+     </layout>
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="eee" />
++    <option name="LAST_COMMIT_MESSAGE" value="eee" />
+   </component>
+   <component name="editorHistoryManager">
+     <entry file="file://$PROJECT_DIR$/purplePebble/Homepage/urls.py" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.7\" project-jdk-type=\"Python SDK\" />\r\n  <component name=\"PyCharmProfessionalAdvertiser\">\r\n    <option name=\"shown\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 4fb00ab66ae426c1e950ba754b031b703dde2f15)
++++ b/.idea/misc.xml	(date 1613477354674)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+   <component name="PyCharmProfessionalAdvertiser">
+     <option name="shown" value="true" />
+   </component>
+Index: .idea/purplePebble.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n  <component name=\"TestRunnerService\">\r\n    <option name=\"projectConfiguration\" value=\"pytest\" />\r\n    <option name=\"PROJECT_TEST_RUNNER\" value=\"pytest\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/purplePebble.iml b/.idea/purplePebble.iml
+--- a/.idea/purplePebble.iml	(revision 4fb00ab66ae426c1e950ba754b031b703dde2f15)
++++ b/.idea/purplePebble.iml	(date 1613477354753)
+@@ -2,11 +2,10 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="TestRunnerService">
+-    <option name="projectConfiguration" value="pytest" />
+     <option name="PROJECT_TEST_RUNNER" value="pytest" />
+   </component>
+ </module>
+\ No newline at end of file

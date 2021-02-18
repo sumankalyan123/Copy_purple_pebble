@@ -361,6 +361,8 @@ header h1 a {
 
 header h1 a img {
     display: block;
+    width: 590px;
+    height: 70px;
 }
 
 .main {
